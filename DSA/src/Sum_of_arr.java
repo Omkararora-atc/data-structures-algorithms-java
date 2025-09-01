@@ -1,8 +1,13 @@
 public class Sum_of_arr {
     public void sum(int[] arr){
+        if (arr == null || arr.length == 0) {
+            System.out.println("Array is empty or null");
+            return;
+        }
         int sum = 0;
-        for (int i=0; i<arr.length; i++){
-            sum += arr[i];
+
+        for (int value : arr) {
+            sum += value;
         }
         System.out.println("Sum of array elements: " + sum);
     }
